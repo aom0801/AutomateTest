@@ -1,0 +1,3074 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on darwin)" generated="20230604 22:05:13.373" rpa="false" schemaversion="3">
+<suite id="s1" name="Workshop3" source="/Users/livinginsider/Automate/workshop3/workshop3.robot">
+<kw name="Set Selenium Speed" library="SeleniumLibrary" type="SETUP">
+<arg>0.5s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230604 22:05:13.428" endtime="20230604 22:05:13.429"/>
+</kw>
+<test id="s1-t1" name="TC-input data pass" line="13">
+<kw name="Open WebBrowser" library="keyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230604 22:05:13.429" level="INFO">Opening browser 'gc' to base url 'https://automate-test.stpb-digital.com/register/'.</msg>
+<msg timestamp="20230604 22:05:13.429" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230604 22:05:13.429" endtime="20230604 22:05:16.147"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kru P' Beam</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230604 22:05:16.148" endtime="20230604 22:05:16.673"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230604 22:05:16.673" endtime="20230604 22:05:17.587"/>
+</kw>
+<status status="PASS" starttime="20230604 22:05:13.429" endtime="20230604 22:05:17.587"/>
+</kw>
+<kw name="Input data for register pass" library="keyword">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_firstname}</arg>
+<arg>Patcharaporn</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:17.591" level="INFO">Typing text 'Patcharaporn' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20230604 22:05:17.588" endtime="20230604 22:05:19.249"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_lastname}</arg>
+<arg>Kheawsuwan</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:19.250" level="INFO">Typing text 'Kheawsuwan' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20230604 22:05:19.249" endtime="20230604 22:05:20.845"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<arg>aon@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:20.846" level="INFO">Typing text 'aon@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230604 22:05:20.845" endtime="20230604 22:05:22.456"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>1234567</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:22.458" level="INFO">Typing text '1234567' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230604 22:05:22.456" endtime="20230604 22:05:24.068"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_mobile_phone}</arg>
+<arg>0897656778</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:24.070" level="INFO">Typing text '0897656778' into text field 'id=mobile-phone'.</msg>
+<status status="PASS" starttime="20230604 22:05:24.068" endtime="20230604 22:05:25.694"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${locator_gender}</arg>
+<arg>male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230604 22:05:25.694" level="INFO">Selecting 'male' from radio button 'validation-basic-radio'.</msg>
+<status status="PASS" starttime="20230604 22:05:25.694" endtime="20230604 22:05:27.308"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:27.310" level="INFO">Selecting checkbox 'name=courses.SQL'.</msg>
+<status status="PASS" starttime="20230604 22:05:27.309" endtime="20230604 22:05:29.940"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:29.940" level="INFO">Selecting checkbox 'name=courses.Test Manual'.</msg>
+<status status="PASS" starttime="20230604 22:05:29.940" endtime="20230604 22:05:32.529"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:32.531" level="INFO">Selecting checkbox 'name=courses.Automate Test'.</msg>
+<status status="PASS" starttime="20230604 22:05:32.530" endtime="20230604 22:05:35.151"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_2}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:35.154" level="INFO">Selecting checkbox 'name=courses.Automate Test2'.</msg>
+<status status="PASS" starttime="20230604 22:05:35.152" endtime="20230604 22:05:37.774"/>
+</kw>
+<kw name="Select list nationality" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_nationality}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:37.777" level="INFO">Clicking element 'id=nationality'.</msg>
+<status status="PASS" starttime="20230604 22:05:37.776" endtime="20230604 22:05:38.920"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:05:38.920" endtime="20230604 22:05:39.975"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:39.977" level="INFO">Clicking element '//*[@id="menu-"]/div[3]/ul/li[221]'.</msg>
+<status status="PASS" starttime="20230604 22:05:39.975" endtime="20230604 22:05:41.094"/>
+</kw>
+<status status="PASS" starttime="20230604 22:05:37.775" endtime="20230604 22:05:41.095"/>
+</kw>
+<kw name="Select list role" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_role}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:41.097" level="INFO">Clicking element 'id=select-role'.</msg>
+<status status="PASS" starttime="20230604 22:05:41.096" endtime="20230604 22:05:42.170"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:05:42.171" endtime="20230604 22:05:43.213"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:43.215" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20230604 22:05:43.213" endtime="20230604 22:05:44.276"/>
+</kw>
+<status status="PASS" starttime="20230604 22:05:41.095" endtime="20230604 22:05:44.276"/>
+</kw>
+<kw name="Select list plan" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:44.279" level="INFO">Clicking element 'id=select-plan'.</msg>
+<status status="PASS" starttime="20230604 22:05:44.278" endtime="20230604 22:05:45.343"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:05:45.344" endtime="20230604 22:05:46.389"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:46.391" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20230604 22:05:46.390" endtime="20230604 22:05:47.457"/>
+</kw>
+<status status="PASS" starttime="20230604 22:05:44.277" endtime="20230604 22:05:47.458"/>
+</kw>
+<status status="PASS" starttime="20230604 22:05:17.588" endtime="20230604 22:05:47.458"/>
+</kw>
+<kw name="Sign up" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_btn_sign_up}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:47.460" level="INFO">Clicking element 'id=btn-sign-up'.</msg>
+<status status="PASS" starttime="20230604 22:05:47.459" endtime="20230604 22:05:48.563"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Register Success</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230604 22:05:48.564" endtime="20230604 22:05:49.079"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_ok}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:49.081" level="INFO">Clicking element 'id=btn-ok'.</msg>
+<status status="PASS" starttime="20230604 22:05:49.079" endtime="20230604 22:05:50.172"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Welcome to Kru P' Beam</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230604 22:05:50.173" endtime="20230604 22:05:50.699"/>
+</kw>
+<status status="PASS" starttime="20230604 22:05:47.458" endtime="20230604 22:05:50.699"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230604 22:05:50.700" endtime="20230604 22:05:51.277"/>
+</kw>
+<doc>กรณีกรอกข้อมูลครบถ้วน</doc>
+<tag>Test Pass</tag>
+<status status="PASS" starttime="20230604 22:05:13.429" endtime="20230604 22:05:51.277"/>
+</test>
+<test id="s1-t2" name="TC-reset data" line="19">
+<kw name="Open WebBrowser" library="keyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230604 22:05:51.281" level="INFO">Opening browser 'gc' to base url 'https://automate-test.stpb-digital.com/register/'.</msg>
+<msg timestamp="20230604 22:05:51.282" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230604 22:05:51.280" endtime="20230604 22:05:53.917"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kru P' Beam</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230604 22:05:53.918" endtime="20230604 22:05:54.440"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230604 22:05:54.441" endtime="20230604 22:05:55.354"/>
+</kw>
+<status status="PASS" starttime="20230604 22:05:51.279" endtime="20230604 22:05:55.354"/>
+</kw>
+<kw name="Input data for register pass" library="keyword">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_firstname}</arg>
+<arg>Patcharaporn</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:55.357" level="INFO">Typing text 'Patcharaporn' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20230604 22:05:55.356" endtime="20230604 22:05:57.026"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_lastname}</arg>
+<arg>Kheawsuwan</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:57.029" level="INFO">Typing text 'Kheawsuwan' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20230604 22:05:57.027" endtime="20230604 22:05:58.631"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<arg>aon@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:05:58.633" level="INFO">Typing text 'aon@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230604 22:05:58.632" endtime="20230604 22:06:00.231"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>1234567</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:00.233" level="INFO">Typing text '1234567' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230604 22:06:00.231" endtime="20230604 22:06:01.832"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_mobile_phone}</arg>
+<arg>0897656778</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:01.833" level="INFO">Typing text '0897656778' into text field 'id=mobile-phone'.</msg>
+<status status="PASS" starttime="20230604 22:06:01.832" endtime="20230604 22:06:03.442"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${locator_gender}</arg>
+<arg>male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230604 22:06:03.444" level="INFO">Selecting 'male' from radio button 'validation-basic-radio'.</msg>
+<status status="PASS" starttime="20230604 22:06:03.443" endtime="20230604 22:06:05.030"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:05.031" level="INFO">Selecting checkbox 'name=courses.SQL'.</msg>
+<status status="PASS" starttime="20230604 22:06:05.030" endtime="20230604 22:06:07.616"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:07.617" level="INFO">Selecting checkbox 'name=courses.Test Manual'.</msg>
+<status status="PASS" starttime="20230604 22:06:07.616" endtime="20230604 22:06:10.217"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:10.219" level="INFO">Selecting checkbox 'name=courses.Automate Test'.</msg>
+<status status="PASS" starttime="20230604 22:06:10.218" endtime="20230604 22:06:12.814"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_2}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:12.816" level="INFO">Selecting checkbox 'name=courses.Automate Test2'.</msg>
+<status status="PASS" starttime="20230604 22:06:12.815" endtime="20230604 22:06:15.408"/>
+</kw>
+<kw name="Select list nationality" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_nationality}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:15.410" level="INFO">Clicking element 'id=nationality'.</msg>
+<status status="PASS" starttime="20230604 22:06:15.409" endtime="20230604 22:06:16.533"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:06:16.534" endtime="20230604 22:06:17.577"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:17.580" level="INFO">Clicking element '//*[@id="menu-"]/div[3]/ul/li[221]'.</msg>
+<status status="PASS" starttime="20230604 22:06:17.578" endtime="20230604 22:06:18.685"/>
+</kw>
+<status status="PASS" starttime="20230604 22:06:15.408" endtime="20230604 22:06:18.685"/>
+</kw>
+<kw name="Select list role" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_role}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:18.687" level="INFO">Clicking element 'id=select-role'.</msg>
+<status status="PASS" starttime="20230604 22:06:18.686" endtime="20230604 22:06:19.748"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:06:19.749" endtime="20230604 22:06:20.787"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:20.789" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20230604 22:06:20.788" endtime="20230604 22:06:21.844"/>
+</kw>
+<status status="PASS" starttime="20230604 22:06:18.686" endtime="20230604 22:06:21.845"/>
+</kw>
+<kw name="Select list plan" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:21.847" level="INFO">Clicking element 'id=select-plan'.</msg>
+<status status="PASS" starttime="20230604 22:06:21.846" endtime="20230604 22:06:22.886"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:06:22.887" endtime="20230604 22:06:23.922"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:23.924" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20230604 22:06:23.922" endtime="20230604 22:06:24.980"/>
+</kw>
+<status status="PASS" starttime="20230604 22:06:21.845" endtime="20230604 22:06:24.980"/>
+</kw>
+<status status="PASS" starttime="20230604 22:05:55.355" endtime="20230604 22:06:24.981"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_reset}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:24.982" level="INFO">Clicking element 'id=reset'.</msg>
+<status status="PASS" starttime="20230604 22:06:24.981" endtime="20230604 22:06:26.058"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230604 22:06:26.058" endtime="20230604 22:06:26.628"/>
+</kw>
+<doc>ใช้สำหรับกรณีเคลียร์ข้อมูล</doc>
+<tag>Test Pass</tag>
+<status status="PASS" starttime="20230604 22:05:51.278" endtime="20230604 22:06:26.628"/>
+</test>
+<test id="s1-t3" name="TC-verify formate email" line="25">
+<kw name="Open WebBrowser" library="keyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230604 22:06:26.633" level="INFO">Opening browser 'gc' to base url 'https://automate-test.stpb-digital.com/register/'.</msg>
+<msg timestamp="20230604 22:06:26.635" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230604 22:06:26.632" endtime="20230604 22:06:29.495"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kru P' Beam</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230604 22:06:29.496" endtime="20230604 22:06:30.019"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230604 22:06:30.019" endtime="20230604 22:06:30.931"/>
+</kw>
+<status status="PASS" starttime="20230604 22:06:26.632" endtime="20230604 22:06:30.932"/>
+</kw>
+<kw name="Input data for fail - formate email" library="keyword">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_firstname}</arg>
+<arg>Patcharaporn</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:30.935" level="INFO">Typing text 'Patcharaporn' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20230604 22:06:30.934" endtime="20230604 22:06:32.610"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_lastname}</arg>
+<arg>Kheawsuwan</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:32.611" level="INFO">Typing text 'Kheawsuwan' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20230604 22:06:32.610" endtime="20230604 22:06:34.212"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<arg>aomgmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:34.214" level="INFO">Typing text 'aomgmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230604 22:06:34.213" endtime="20230604 22:06:35.812"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>1357908642</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:35.814" level="INFO">Typing text '1357908642' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230604 22:06:35.812" endtime="20230604 22:06:37.418"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_mobile_phone}</arg>
+<arg>0894678998</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:37.420" level="INFO">Typing text '0894678998' into text field 'id=mobile-phone'.</msg>
+<status status="PASS" starttime="20230604 22:06:37.418" endtime="20230604 22:06:39.025"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${locator_gender}</arg>
+<arg>male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230604 22:06:39.027" level="INFO">Selecting 'male' from radio button 'validation-basic-radio'.</msg>
+<status status="PASS" starttime="20230604 22:06:39.026" endtime="20230604 22:06:40.619"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:40.620" level="INFO">Selecting checkbox 'name=courses.SQL'.</msg>
+<status status="PASS" starttime="20230604 22:06:40.619" endtime="20230604 22:06:43.227"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:43.229" level="INFO">Selecting checkbox 'name=courses.Test Manual'.</msg>
+<status status="PASS" starttime="20230604 22:06:43.227" endtime="20230604 22:06:45.833"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:45.835" level="INFO">Selecting checkbox 'name=courses.Automate Test'.</msg>
+<status status="PASS" starttime="20230604 22:06:45.834" endtime="20230604 22:06:48.421"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_2}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:48.424" level="INFO">Selecting checkbox 'name=courses.Automate Test2'.</msg>
+<status status="PASS" starttime="20230604 22:06:48.422" endtime="20230604 22:06:51.022"/>
+</kw>
+<kw name="Select list nationality" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_nationality}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:51.025" level="INFO">Clicking element 'id=nationality'.</msg>
+<status status="PASS" starttime="20230604 22:06:51.024" endtime="20230604 22:06:52.148"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:06:52.148" endtime="20230604 22:06:53.188"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:53.190" level="INFO">Clicking element '//*[@id="menu-"]/div[3]/ul/li[221]'.</msg>
+<status status="PASS" starttime="20230604 22:06:53.188" endtime="20230604 22:06:54.295"/>
+</kw>
+<status status="PASS" starttime="20230604 22:06:51.023" endtime="20230604 22:06:54.295"/>
+</kw>
+<kw name="Select list role" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_role}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:54.295" level="INFO">Clicking element 'id=select-role'.</msg>
+<status status="PASS" starttime="20230604 22:06:54.295" endtime="20230604 22:06:55.348"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:06:55.348" endtime="20230604 22:06:56.387"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:56.389" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20230604 22:06:56.388" endtime="20230604 22:06:57.441"/>
+</kw>
+<status status="PASS" starttime="20230604 22:06:54.295" endtime="20230604 22:06:57.442"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_btn_sign_up}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:57.444" level="INFO">Clicking element 'id=btn-sign-up'.</msg>
+<status status="PASS" starttime="20230604 22:06:57.442" endtime="20230604 22:06:58.513"/>
+</kw>
+<status status="PASS" starttime="20230604 22:06:30.933" endtime="20230604 22:06:58.513"/>
+</kw>
+<kw name="Verify error message - formate email" library="keyword">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${txt}</var>
+<arg>${locator_error_msg_email}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:06:59.554" level="INFO">${txt} = Invalid email address</msg>
+<status status="PASS" starttime="20230604 22:06:58.514" endtime="20230604 22:06:59.554"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${txt}</arg>
+<arg>Invalid email address</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230604 22:06:59.554" endtime="20230604 22:06:59.554"/>
+</kw>
+<status status="PASS" starttime="20230604 22:06:58.514" endtime="20230604 22:06:59.554"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230604 22:06:59.555" endtime="20230604 22:07:00.123"/>
+</kw>
+<doc>ใช้สำหรับกรณีที่ Email ไม่ถูก formate</doc>
+<tag>Test Fail</tag>
+<status status="PASS" starttime="20230604 22:06:26.630" endtime="20230604 22:07:00.124"/>
+</test>
+<test id="s1-t4" name="TC-verify case fail" line="31">
+<kw name="Open WebBrowser" library="keyword" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230604 22:07:00.129" level="INFO">Opening browser 'gc' to base url 'https://automate-test.stpb-digital.com/register/'.</msg>
+<msg timestamp="20230604 22:07:00.131" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230604 22:07:00.128" endtime="20230604 22:07:02.664"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kru P' Beam</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230604 22:07:02.665" endtime="20230604 22:07:03.187"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230604 22:07:03.187" endtime="20230604 22:07:04.100"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:00.128" endtime="20230604 22:07:04.100"/>
+</kw>
+<kw name="Input data for fail - Test Temples" library="keyword">
+<arg>${EMPTY}</arg>
+<arg>นามสกุล</arg>
+<arg>aom@gmail.com</arg>
+<arg>0123456</arg>
+<arg>0895737887</arg>
+<arg>male</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>${locator_error_msg_firstname}</arg>
+<arg>This field is required</arg>
+<kw name="Open WebBrowser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230604 22:07:04.107" level="INFO">Opening browser 'gc' to base url 'https://automate-test.stpb-digital.com/register/'.</msg>
+<msg timestamp="20230604 22:07:04.108" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230604 22:07:04.104" endtime="20230604 22:07:06.538"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kru P' Beam</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230604 22:07:06.538" endtime="20230604 22:07:07.059"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230604 22:07:07.060" endtime="20230604 22:07:07.972"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:04.103" endtime="20230604 22:07:07.972"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_firstname}</arg>
+<arg>${firsename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:07.974" level="INFO">Typing text '' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20230604 22:07:07.973" endtime="20230604 22:07:09.556"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_lastname}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:09.556" level="INFO">Typing text 'นามสกุล' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20230604 22:07:09.556" endtime="20230604 22:07:11.222"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:11.224" level="INFO">Typing text 'aom@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230604 22:07:11.223" endtime="20230604 22:07:12.828"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:12.830" level="INFO">Typing text '0123456' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230604 22:07:12.829" endtime="20230604 22:07:14.427"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_mobile_phone}</arg>
+<arg>${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:14.429" level="INFO">Typing text '0895737887' into text field 'id=mobile-phone'.</msg>
+<status status="PASS" starttime="20230604 22:07:14.428" endtime="20230604 22:07:16.030"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${gender}&quot; != &quot;EMPTY&quot;">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${locator_gender}</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230604 22:07:16.032" level="INFO">Selecting 'male' from radio button 'validation-basic-radio'.</msg>
+<status status="PASS" starttime="20230604 22:07:16.032" endtime="20230604 22:07:17.608"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:16.031" endtime="20230604 22:07:17.609"/>
+</branch>
+<status status="PASS" starttime="20230604 22:07:16.030" endtime="20230604 22:07:17.609"/>
+</if>
+<if>
+<branch type="IF" condition="${checkbox} == 1">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:17.610" level="INFO">Selecting checkbox 'name=courses.SQL'.</msg>
+<status status="PASS" starttime="20230604 22:07:17.609" endtime="20230604 22:07:20.217"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:17.609" endtime="20230604 22:07:20.217"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 2">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:20.217" endtime="20230604 22:07:20.217"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:20.217" endtime="20230604 22:07:20.217"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:07:20.217" endtime="20230604 22:07:20.217"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 3">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:20.217" endtime="20230604 22:07:20.218"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:20.218" endtime="20230604 22:07:20.218"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:20.218" endtime="20230604 22:07:20.218"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:07:20.217" endtime="20230604 22:07:20.218"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 4">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:20.218" endtime="20230604 22:07:20.218"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:20.218" endtime="20230604 22:07:20.218"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:20.218" endtime="20230604 22:07:20.218"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_2}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:20.218" endtime="20230604 22:07:20.218"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:07:20.218" endtime="20230604 22:07:20.218"/>
+</branch>
+<status status="PASS" starttime="20230604 22:07:17.609" endtime="20230604 22:07:20.218"/>
+</if>
+<if>
+<branch type="IF" condition="${national} == 1">
+<kw name="Select list nationality" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_nationality}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:20.220" level="INFO">Clicking element 'id=nationality'.</msg>
+<status status="PASS" starttime="20230604 22:07:20.219" endtime="20230604 22:07:21.336"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:07:21.336" endtime="20230604 22:07:22.377"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:22.379" level="INFO">Clicking element '//*[@id="menu-"]/div[3]/ul/li[221]'.</msg>
+<status status="PASS" starttime="20230604 22:07:22.377" endtime="20230604 22:07:23.459"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:20.219" endtime="20230604 22:07:23.459"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:20.218" endtime="20230604 22:07:23.459"/>
+</branch>
+<status status="PASS" starttime="20230604 22:07:20.218" endtime="20230604 22:07:23.459"/>
+</if>
+<if>
+<branch type="IF" condition="${role} == 1">
+<kw name="Select list role" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_role}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:23.460" level="INFO">Clicking element 'id=select-role'.</msg>
+<status status="PASS" starttime="20230604 22:07:23.460" endtime="20230604 22:07:24.517"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:07:24.518" endtime="20230604 22:07:25.559"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:25.561" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20230604 22:07:25.560" endtime="20230604 22:07:26.616"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:23.460" endtime="20230604 22:07:26.617"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:23.459" endtime="20230604 22:07:26.617"/>
+</branch>
+<status status="PASS" starttime="20230604 22:07:23.459" endtime="20230604 22:07:26.617"/>
+</if>
+<if>
+<branch type="IF" condition="${plan} == 1">
+<kw name="Select list plan" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:26.620" level="INFO">Clicking element 'id=select-plan'.</msg>
+<status status="PASS" starttime="20230604 22:07:26.619" endtime="20230604 22:07:27.676"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:07:27.677" endtime="20230604 22:07:28.710"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:28.712" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20230604 22:07:28.711" endtime="20230604 22:07:29.767"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:26.618" endtime="20230604 22:07:29.767"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:26.617" endtime="20230604 22:07:29.767"/>
+</branch>
+<status status="PASS" starttime="20230604 22:07:26.617" endtime="20230604 22:07:29.767"/>
+</if>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_btn_sign_up}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:29.769" level="INFO">Clicking element 'id=btn-sign-up'.</msg>
+<status status="PASS" starttime="20230604 22:07:29.768" endtime="20230604 22:07:30.842"/>
+</kw>
+<kw name="Verify error message - Test Temples" library="keyword">
+<arg>${locator_error_msg}</arg>
+<arg>${msg}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${txt}</var>
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:31.884" level="INFO">${txt} = This field is required</msg>
+<status status="PASS" starttime="20230604 22:07:30.843" endtime="20230604 22:07:31.885"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${txt}</arg>
+<arg>${msg}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230604 22:07:31.885" endtime="20230604 22:07:31.886"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:30.843" endtime="20230604 22:07:31.886"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:04.101" endtime="20230604 22:07:31.886"/>
+</kw>
+<kw name="Input data for fail - Test Temples" library="keyword">
+<arg>ชื่อ</arg>
+<arg>${EMPTY}</arg>
+<arg>aom@gmail.com</arg>
+<arg>0123456</arg>
+<arg>0895737887</arg>
+<arg>male</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>${locator_error_msg_lastname}</arg>
+<arg>This field is required</arg>
+<kw name="Open WebBrowser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230604 22:07:31.889" level="INFO">Opening browser 'gc' to base url 'https://automate-test.stpb-digital.com/register/'.</msg>
+<msg timestamp="20230604 22:07:31.890" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230604 22:07:31.888" endtime="20230604 22:07:35.285"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kru P' Beam</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230604 22:07:35.286" endtime="20230604 22:07:35.809"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230604 22:07:35.810" endtime="20230604 22:07:36.725"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:31.888" endtime="20230604 22:07:36.726"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_firstname}</arg>
+<arg>${firsename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:36.728" level="INFO">Typing text 'ชื่อ' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20230604 22:07:36.727" endtime="20230604 22:07:38.423"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_lastname}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:38.424" level="INFO">Typing text '' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20230604 22:07:38.423" endtime="20230604 22:07:40.007"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:40.009" level="INFO">Typing text 'aom@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230604 22:07:40.008" endtime="20230604 22:07:41.617"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:41.618" level="INFO">Typing text '0123456' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230604 22:07:41.617" endtime="20230604 22:07:43.198"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_mobile_phone}</arg>
+<arg>${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:43.200" level="INFO">Typing text '0895737887' into text field 'id=mobile-phone'.</msg>
+<status status="PASS" starttime="20230604 22:07:43.199" endtime="20230604 22:07:44.808"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${gender}&quot; != &quot;EMPTY&quot;">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${locator_gender}</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230604 22:07:44.810" level="INFO">Selecting 'male' from radio button 'validation-basic-radio'.</msg>
+<status status="PASS" starttime="20230604 22:07:44.809" endtime="20230604 22:07:46.416"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:44.808" endtime="20230604 22:07:46.417"/>
+</branch>
+<status status="PASS" starttime="20230604 22:07:44.808" endtime="20230604 22:07:46.417"/>
+</if>
+<if>
+<branch type="IF" condition="${checkbox} == 1">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:46.419" level="INFO">Selecting checkbox 'name=courses.SQL'.</msg>
+<status status="PASS" starttime="20230604 22:07:46.418" endtime="20230604 22:07:49.017"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:46.417" endtime="20230604 22:07:49.017"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 2">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:49.017" endtime="20230604 22:07:49.018"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:49.018" endtime="20230604 22:07:49.018"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:07:49.017" endtime="20230604 22:07:49.018"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 3">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:49.018" endtime="20230604 22:07:49.018"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:49.018" endtime="20230604 22:07:49.018"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:49.018" endtime="20230604 22:07:49.018"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:07:49.018" endtime="20230604 22:07:49.018"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 4">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:49.019" endtime="20230604 22:07:49.019"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:49.019" endtime="20230604 22:07:49.019"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:49.019" endtime="20230604 22:07:49.019"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_2}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:07:49.019" endtime="20230604 22:07:49.019"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:07:49.019" endtime="20230604 22:07:49.019"/>
+</branch>
+<status status="PASS" starttime="20230604 22:07:46.417" endtime="20230604 22:07:49.019"/>
+</if>
+<if>
+<branch type="IF" condition="${national} == 1">
+<kw name="Select list nationality" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_nationality}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:49.021" level="INFO">Clicking element 'id=nationality'.</msg>
+<status status="PASS" starttime="20230604 22:07:49.020" endtime="20230604 22:07:50.138"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:07:50.139" endtime="20230604 22:07:51.184"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:51.187" level="INFO">Clicking element '//*[@id="menu-"]/div[3]/ul/li[221]'.</msg>
+<status status="PASS" starttime="20230604 22:07:51.185" endtime="20230604 22:07:52.274"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:49.020" endtime="20230604 22:07:52.274"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:49.019" endtime="20230604 22:07:52.274"/>
+</branch>
+<status status="PASS" starttime="20230604 22:07:49.019" endtime="20230604 22:07:52.274"/>
+</if>
+<if>
+<branch type="IF" condition="${role} == 1">
+<kw name="Select list role" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_role}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:52.277" level="INFO">Clicking element 'id=select-role'.</msg>
+<status status="PASS" starttime="20230604 22:07:52.276" endtime="20230604 22:07:53.397"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:07:53.397" endtime="20230604 22:07:54.434"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:54.436" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20230604 22:07:54.435" endtime="20230604 22:07:55.492"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:52.275" endtime="20230604 22:07:55.493"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:52.275" endtime="20230604 22:07:55.493"/>
+</branch>
+<status status="PASS" starttime="20230604 22:07:52.275" endtime="20230604 22:07:55.493"/>
+</if>
+<if>
+<branch type="IF" condition="${plan} == 1">
+<kw name="Select list plan" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:55.496" level="INFO">Clicking element 'id=select-plan'.</msg>
+<status status="PASS" starttime="20230604 22:07:55.495" endtime="20230604 22:07:56.547"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:07:56.547" endtime="20230604 22:07:57.583"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:57.585" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20230604 22:07:57.583" endtime="20230604 22:07:58.636"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:55.494" endtime="20230604 22:07:58.637"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:55.493" endtime="20230604 22:07:58.637"/>
+</branch>
+<status status="PASS" starttime="20230604 22:07:55.493" endtime="20230604 22:07:58.637"/>
+</if>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_btn_sign_up}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:07:58.638" level="INFO">Clicking element 'id=btn-sign-up'.</msg>
+<status status="PASS" starttime="20230604 22:07:58.637" endtime="20230604 22:07:59.714"/>
+</kw>
+<kw name="Verify error message - Test Temples" library="keyword">
+<arg>${locator_error_msg}</arg>
+<arg>${msg}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${txt}</var>
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:00.756" level="INFO">${txt} = This field is required</msg>
+<status status="PASS" starttime="20230604 22:07:59.716" endtime="20230604 22:08:00.756"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${txt}</arg>
+<arg>${msg}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230604 22:08:00.757" endtime="20230604 22:08:00.758"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:59.715" endtime="20230604 22:08:00.758"/>
+</kw>
+<status status="PASS" starttime="20230604 22:07:31.887" endtime="20230604 22:08:00.758"/>
+</kw>
+<kw name="Input data for fail - Test Temples" library="keyword">
+<arg>ชื่อ</arg>
+<arg>นามสกุล</arg>
+<arg>${EMPTY}</arg>
+<arg>0123456</arg>
+<arg>0895737887</arg>
+<arg>male</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>${locator_error_msg_email}</arg>
+<arg>This field is required</arg>
+<kw name="Open WebBrowser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230604 22:08:00.761" level="INFO">Opening browser 'gc' to base url 'https://automate-test.stpb-digital.com/register/'.</msg>
+<msg timestamp="20230604 22:08:00.762" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230604 22:08:00.760" endtime="20230604 22:08:06.115"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kru P' Beam</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230604 22:08:06.116" endtime="20230604 22:08:06.637"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230604 22:08:06.638" endtime="20230604 22:08:07.557"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:00.760" endtime="20230604 22:08:07.558"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_firstname}</arg>
+<arg>${firsename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:07.560" level="INFO">Typing text 'ชื่อ' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20230604 22:08:07.558" endtime="20230604 22:08:09.182"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_lastname}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:09.184" level="INFO">Typing text 'นามสกุล' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20230604 22:08:09.182" endtime="20230604 22:08:10.790"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:10.792" level="INFO">Typing text '' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230604 22:08:10.791" endtime="20230604 22:08:12.379"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:12.381" level="INFO">Typing text '0123456' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230604 22:08:12.379" endtime="20230604 22:08:13.982"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_mobile_phone}</arg>
+<arg>${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:13.984" level="INFO">Typing text '0895737887' into text field 'id=mobile-phone'.</msg>
+<status status="PASS" starttime="20230604 22:08:13.983" endtime="20230604 22:08:15.591"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${gender}&quot; != &quot;EMPTY&quot;">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${locator_gender}</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230604 22:08:15.593" level="INFO">Selecting 'male' from radio button 'validation-basic-radio'.</msg>
+<status status="PASS" starttime="20230604 22:08:15.592" endtime="20230604 22:08:17.183"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:15.591" endtime="20230604 22:08:17.183"/>
+</branch>
+<status status="PASS" starttime="20230604 22:08:15.591" endtime="20230604 22:08:17.183"/>
+</if>
+<if>
+<branch type="IF" condition="${checkbox} == 1">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:17.183" level="INFO">Selecting checkbox 'name=courses.SQL'.</msg>
+<status status="PASS" starttime="20230604 22:08:17.183" endtime="20230604 22:08:19.781"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:17.183" endtime="20230604 22:08:19.781"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 2">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:19.781" endtime="20230604 22:08:19.781"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:19.781" endtime="20230604 22:08:19.781"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:08:19.781" endtime="20230604 22:08:19.781"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 3">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:19.781" endtime="20230604 22:08:19.781"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:19.781" endtime="20230604 22:08:19.781"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:19.781" endtime="20230604 22:08:19.781"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:08:19.781" endtime="20230604 22:08:19.781"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 4">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:19.781" endtime="20230604 22:08:19.781"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:19.781" endtime="20230604 22:08:19.781"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:19.781" endtime="20230604 22:08:19.781"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_2}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:19.781" endtime="20230604 22:08:19.781"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:08:19.781" endtime="20230604 22:08:19.781"/>
+</branch>
+<status status="PASS" starttime="20230604 22:08:17.183" endtime="20230604 22:08:19.781"/>
+</if>
+<if>
+<branch type="IF" condition="${national} == 1">
+<kw name="Select list nationality" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_nationality}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:19.782" level="INFO">Clicking element 'id=nationality'.</msg>
+<status status="PASS" starttime="20230604 22:08:19.782" endtime="20230604 22:08:20.896"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:08:20.896" endtime="20230604 22:08:21.938"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:21.939" level="INFO">Clicking element '//*[@id="menu-"]/div[3]/ul/li[221]'.</msg>
+<status status="PASS" starttime="20230604 22:08:21.938" endtime="20230604 22:08:23.043"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:19.782" endtime="20230604 22:08:23.044"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:19.782" endtime="20230604 22:08:23.044"/>
+</branch>
+<status status="PASS" starttime="20230604 22:08:19.782" endtime="20230604 22:08:23.044"/>
+</if>
+<if>
+<branch type="IF" condition="${role} == 1">
+<kw name="Select list role" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_role}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:23.046" level="INFO">Clicking element 'id=select-role'.</msg>
+<status status="PASS" starttime="20230604 22:08:23.046" endtime="20230604 22:08:24.106"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:08:24.107" endtime="20230604 22:08:25.146"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:25.148" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20230604 22:08:25.147" endtime="20230604 22:08:26.202"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:23.045" endtime="20230604 22:08:26.203"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:23.044" endtime="20230604 22:08:26.203"/>
+</branch>
+<status status="PASS" starttime="20230604 22:08:23.044" endtime="20230604 22:08:26.203"/>
+</if>
+<if>
+<branch type="IF" condition="${plan} == 1">
+<kw name="Select list plan" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:26.206" level="INFO">Clicking element 'id=select-plan'.</msg>
+<status status="PASS" starttime="20230604 22:08:26.205" endtime="20230604 22:08:27.247"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:08:27.248" endtime="20230604 22:08:28.285"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:28.287" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20230604 22:08:28.285" endtime="20230604 22:08:29.343"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:26.204" endtime="20230604 22:08:29.343"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:26.204" endtime="20230604 22:08:29.343"/>
+</branch>
+<status status="PASS" starttime="20230604 22:08:26.204" endtime="20230604 22:08:29.343"/>
+</if>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_btn_sign_up}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:29.345" level="INFO">Clicking element 'id=btn-sign-up'.</msg>
+<status status="PASS" starttime="20230604 22:08:29.344" endtime="20230604 22:08:30.422"/>
+</kw>
+<kw name="Verify error message - Test Temples" library="keyword">
+<arg>${locator_error_msg}</arg>
+<arg>${msg}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${txt}</var>
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:31.466" level="INFO">${txt} = This field is required</msg>
+<status status="PASS" starttime="20230604 22:08:30.424" endtime="20230604 22:08:31.466"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${txt}</arg>
+<arg>${msg}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230604 22:08:31.467" endtime="20230604 22:08:31.468"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:30.423" endtime="20230604 22:08:31.468"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:00.758" endtime="20230604 22:08:31.468"/>
+</kw>
+<kw name="Input data for fail - Test Temples" library="keyword">
+<arg>ชื่อ</arg>
+<arg>นามสกุล</arg>
+<arg>aom@gmail.com</arg>
+<arg>${EMPTY}</arg>
+<arg>0895737887</arg>
+<arg>male</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>${locator_error_msg_password}</arg>
+<arg>This field is required</arg>
+<kw name="Open WebBrowser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230604 22:08:31.471" level="INFO">Opening browser 'gc' to base url 'https://automate-test.stpb-digital.com/register/'.</msg>
+<msg timestamp="20230604 22:08:31.472" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230604 22:08:31.470" endtime="20230604 22:08:36.159"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kru P' Beam</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230604 22:08:36.160" endtime="20230604 22:08:36.678"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230604 22:08:36.678" endtime="20230604 22:08:37.584"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:31.470" endtime="20230604 22:08:37.584"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_firstname}</arg>
+<arg>${firsename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:37.585" level="INFO">Typing text 'ชื่อ' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20230604 22:08:37.585" endtime="20230604 22:08:39.259"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_lastname}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:39.261" level="INFO">Typing text 'นามสกุล' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20230604 22:08:39.259" endtime="20230604 22:08:40.869"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:40.870" level="INFO">Typing text 'aom@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230604 22:08:40.869" endtime="20230604 22:08:42.471"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:42.473" level="INFO">Typing text '' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230604 22:08:42.472" endtime="20230604 22:08:44.058"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_mobile_phone}</arg>
+<arg>${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:44.060" level="INFO">Typing text '0895737887' into text field 'id=mobile-phone'.</msg>
+<status status="PASS" starttime="20230604 22:08:44.058" endtime="20230604 22:08:45.667"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${gender}&quot; != &quot;EMPTY&quot;">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${locator_gender}</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230604 22:08:45.668" level="INFO">Selecting 'male' from radio button 'validation-basic-radio'.</msg>
+<status status="PASS" starttime="20230604 22:08:45.667" endtime="20230604 22:08:47.254"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:45.667" endtime="20230604 22:08:47.254"/>
+</branch>
+<status status="PASS" starttime="20230604 22:08:45.667" endtime="20230604 22:08:47.254"/>
+</if>
+<if>
+<branch type="IF" condition="${checkbox} == 1">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:47.255" level="INFO">Selecting checkbox 'name=courses.SQL'.</msg>
+<status status="PASS" starttime="20230604 22:08:47.254" endtime="20230604 22:08:49.850"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:47.254" endtime="20230604 22:08:49.850"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 2">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:49.850" endtime="20230604 22:08:49.850"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:49.850" endtime="20230604 22:08:49.850"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:08:49.850" endtime="20230604 22:08:49.850"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 3">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:49.850" endtime="20230604 22:08:49.850"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:49.850" endtime="20230604 22:08:49.850"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:49.851" endtime="20230604 22:08:49.851"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:08:49.850" endtime="20230604 22:08:49.851"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 4">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:49.851" endtime="20230604 22:08:49.851"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:49.851" endtime="20230604 22:08:49.851"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:49.851" endtime="20230604 22:08:49.851"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_2}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:08:49.851" endtime="20230604 22:08:49.851"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:08:49.851" endtime="20230604 22:08:49.851"/>
+</branch>
+<status status="PASS" starttime="20230604 22:08:47.254" endtime="20230604 22:08:49.851"/>
+</if>
+<if>
+<branch type="IF" condition="${national} == 1">
+<kw name="Select list nationality" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_nationality}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:49.851" level="INFO">Clicking element 'id=nationality'.</msg>
+<status status="PASS" starttime="20230604 22:08:49.851" endtime="20230604 22:08:50.960"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:08:50.960" endtime="20230604 22:08:52.005"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:52.007" level="INFO">Clicking element '//*[@id="menu-"]/div[3]/ul/li[221]'.</msg>
+<status status="PASS" starttime="20230604 22:08:52.005" endtime="20230604 22:08:53.113"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:49.851" endtime="20230604 22:08:53.113"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:49.851" endtime="20230604 22:08:53.113"/>
+</branch>
+<status status="PASS" starttime="20230604 22:08:49.851" endtime="20230604 22:08:53.113"/>
+</if>
+<if>
+<branch type="IF" condition="${role} == 1">
+<kw name="Select list role" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_role}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:53.114" level="INFO">Clicking element 'id=select-role'.</msg>
+<status status="PASS" starttime="20230604 22:08:53.113" endtime="20230604 22:08:54.168"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:08:54.169" endtime="20230604 22:08:55.208"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:55.210" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20230604 22:08:55.209" endtime="20230604 22:08:56.263"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:53.113" endtime="20230604 22:08:56.263"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:53.113" endtime="20230604 22:08:56.264"/>
+</branch>
+<status status="PASS" starttime="20230604 22:08:53.113" endtime="20230604 22:08:56.264"/>
+</if>
+<if>
+<branch type="IF" condition="${plan} == 1">
+<kw name="Select list plan" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:56.266" level="INFO">Clicking element 'id=select-plan'.</msg>
+<status status="PASS" starttime="20230604 22:08:56.265" endtime="20230604 22:08:57.325"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:08:57.326" endtime="20230604 22:08:58.362"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:58.364" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20230604 22:08:58.363" endtime="20230604 22:08:59.414"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:56.265" endtime="20230604 22:08:59.414"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:56.264" endtime="20230604 22:08:59.414"/>
+</branch>
+<status status="PASS" starttime="20230604 22:08:56.264" endtime="20230604 22:08:59.414"/>
+</if>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_btn_sign_up}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:08:59.415" level="INFO">Clicking element 'id=btn-sign-up'.</msg>
+<status status="PASS" starttime="20230604 22:08:59.414" endtime="20230604 22:09:00.475"/>
+</kw>
+<kw name="Verify error message - Test Temples" library="keyword">
+<arg>${locator_error_msg}</arg>
+<arg>${msg}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${txt}</var>
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:01.512" level="INFO">${txt} = This field is required</msg>
+<status status="PASS" starttime="20230604 22:09:00.475" endtime="20230604 22:09:01.512"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${txt}</arg>
+<arg>${msg}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230604 22:09:01.512" endtime="20230604 22:09:01.513"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:00.475" endtime="20230604 22:09:01.514"/>
+</kw>
+<status status="PASS" starttime="20230604 22:08:31.468" endtime="20230604 22:09:01.514"/>
+</kw>
+<kw name="Input data for fail - Test Temples" library="keyword">
+<arg>ชื่อ</arg>
+<arg>นามสกุล</arg>
+<arg>aom@gmail.com</arg>
+<arg>0123456</arg>
+<arg>${EMPTY}</arg>
+<arg>male</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>${locator_error_msg_mobile}</arg>
+<arg>This field is required</arg>
+<kw name="Open WebBrowser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230604 22:09:01.517" level="INFO">Opening browser 'gc' to base url 'https://automate-test.stpb-digital.com/register/'.</msg>
+<msg timestamp="20230604 22:09:01.518" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230604 22:09:01.516" endtime="20230604 22:09:06.817"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kru P' Beam</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230604 22:09:06.817" endtime="20230604 22:09:07.336"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230604 22:09:07.337" endtime="20230604 22:09:08.252"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:01.516" endtime="20230604 22:09:08.253"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_firstname}</arg>
+<arg>${firsename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:08.255" level="INFO">Typing text 'ชื่อ' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20230604 22:09:08.253" endtime="20230604 22:09:09.945"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_lastname}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:09.947" level="INFO">Typing text 'นามสกุล' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20230604 22:09:09.946" endtime="20230604 22:09:11.558"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:11.560" level="INFO">Typing text 'aom@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230604 22:09:11.559" endtime="20230604 22:09:13.162"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:13.162" level="INFO">Typing text '0123456' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230604 22:09:13.162" endtime="20230604 22:09:14.753"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_mobile_phone}</arg>
+<arg>${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:14.755" level="INFO">Typing text '' into text field 'id=mobile-phone'.</msg>
+<status status="PASS" starttime="20230604 22:09:14.753" endtime="20230604 22:09:16.341"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${gender}&quot; != &quot;EMPTY&quot;">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${locator_gender}</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230604 22:09:16.343" level="INFO">Selecting 'male' from radio button 'validation-basic-radio'.</msg>
+<status status="PASS" starttime="20230604 22:09:16.343" endtime="20230604 22:09:17.910"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:16.342" endtime="20230604 22:09:17.910"/>
+</branch>
+<status status="PASS" starttime="20230604 22:09:16.342" endtime="20230604 22:09:17.910"/>
+</if>
+<if>
+<branch type="IF" condition="${checkbox} == 1">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:17.911" level="INFO">Selecting checkbox 'name=courses.SQL'.</msg>
+<status status="PASS" starttime="20230604 22:09:17.910" endtime="20230604 22:09:20.491"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:17.910" endtime="20230604 22:09:20.491"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 2">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:20.491" endtime="20230604 22:09:20.491"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:20.491" endtime="20230604 22:09:20.491"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:09:20.491" endtime="20230604 22:09:20.491"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 3">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:20.491" endtime="20230604 22:09:20.491"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:20.491" endtime="20230604 22:09:20.491"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:20.492" endtime="20230604 22:09:20.492"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:09:20.491" endtime="20230604 22:09:20.492"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 4">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:20.492" endtime="20230604 22:09:20.492"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:20.492" endtime="20230604 22:09:20.492"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:20.492" endtime="20230604 22:09:20.492"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_2}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:20.492" endtime="20230604 22:09:20.492"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:09:20.492" endtime="20230604 22:09:20.492"/>
+</branch>
+<status status="PASS" starttime="20230604 22:09:17.910" endtime="20230604 22:09:20.492"/>
+</if>
+<if>
+<branch type="IF" condition="${national} == 1">
+<kw name="Select list nationality" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_nationality}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:20.493" level="INFO">Clicking element 'id=nationality'.</msg>
+<status status="PASS" starttime="20230604 22:09:20.493" endtime="20230604 22:09:21.613"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:09:21.614" endtime="20230604 22:09:22.649"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:22.649" level="INFO">Clicking element '//*[@id="menu-"]/div[3]/ul/li[221]'.</msg>
+<status status="PASS" starttime="20230604 22:09:22.649" endtime="20230604 22:09:23.757"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:20.492" endtime="20230604 22:09:23.757"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:20.492" endtime="20230604 22:09:23.757"/>
+</branch>
+<status status="PASS" starttime="20230604 22:09:20.492" endtime="20230604 22:09:23.757"/>
+</if>
+<if>
+<branch type="IF" condition="${role} == 1">
+<kw name="Select list role" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_role}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:23.761" level="INFO">Clicking element 'id=select-role'.</msg>
+<status status="PASS" starttime="20230604 22:09:23.759" endtime="20230604 22:09:24.819"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:09:24.820" endtime="20230604 22:09:25.861"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:25.863" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20230604 22:09:25.862" endtime="20230604 22:09:26.919"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:23.759" endtime="20230604 22:09:26.920"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:23.758" endtime="20230604 22:09:26.920"/>
+</branch>
+<status status="PASS" starttime="20230604 22:09:23.758" endtime="20230604 22:09:26.920"/>
+</if>
+<if>
+<branch type="IF" condition="${plan} == 1">
+<kw name="Select list plan" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:26.923" level="INFO">Clicking element 'id=select-plan'.</msg>
+<status status="PASS" starttime="20230604 22:09:26.922" endtime="20230604 22:09:27.976"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:09:27.976" endtime="20230604 22:09:29.014"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:29.017" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20230604 22:09:29.015" endtime="20230604 22:09:30.073"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:26.921" endtime="20230604 22:09:30.074"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:26.920" endtime="20230604 22:09:30.074"/>
+</branch>
+<status status="PASS" starttime="20230604 22:09:26.920" endtime="20230604 22:09:30.074"/>
+</if>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_btn_sign_up}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:30.076" level="INFO">Clicking element 'id=btn-sign-up'.</msg>
+<status status="PASS" starttime="20230604 22:09:30.074" endtime="20230604 22:09:31.145"/>
+</kw>
+<kw name="Verify error message - Test Temples" library="keyword">
+<arg>${locator_error_msg}</arg>
+<arg>${msg}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${txt}</var>
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:32.182" level="INFO">${txt} = This field is required</msg>
+<status status="PASS" starttime="20230604 22:09:31.145" endtime="20230604 22:09:32.182"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${txt}</arg>
+<arg>${msg}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230604 22:09:32.182" endtime="20230604 22:09:32.183"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:31.145" endtime="20230604 22:09:32.184"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:01.514" endtime="20230604 22:09:32.184"/>
+</kw>
+<kw name="Input data for fail - Test Temples" library="keyword">
+<arg>ชื่อ</arg>
+<arg>นามสกุล</arg>
+<arg>aom@gmail.com</arg>
+<arg>0123456</arg>
+<arg>0895737887</arg>
+<arg>EMPTY</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>${locator_error_msg_gender}</arg>
+<arg>This field is required</arg>
+<kw name="Open WebBrowser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230604 22:09:32.186" level="INFO">Opening browser 'gc' to base url 'https://automate-test.stpb-digital.com/register/'.</msg>
+<msg timestamp="20230604 22:09:32.187" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230604 22:09:32.185" endtime="20230604 22:09:38.162"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kru P' Beam</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230604 22:09:38.163" endtime="20230604 22:09:38.687"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230604 22:09:38.688" endtime="20230604 22:09:39.603"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:32.185" endtime="20230604 22:09:39.603"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_firstname}</arg>
+<arg>${firsename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:39.605" level="INFO">Typing text 'ชื่อ' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20230604 22:09:39.604" endtime="20230604 22:09:41.252"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_lastname}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:41.254" level="INFO">Typing text 'นามสกุล' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20230604 22:09:41.252" endtime="20230604 22:09:42.852"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:42.854" level="INFO">Typing text 'aom@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230604 22:09:42.852" endtime="20230604 22:09:44.456"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:44.456" level="INFO">Typing text '0123456' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230604 22:09:44.456" endtime="20230604 22:09:46.025"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_mobile_phone}</arg>
+<arg>${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:46.026" level="INFO">Typing text '0895737887' into text field 'id=mobile-phone'.</msg>
+<status status="PASS" starttime="20230604 22:09:46.025" endtime="20230604 22:09:47.623"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${gender}&quot; != &quot;EMPTY&quot;">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${locator_gender}</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:47.624" endtime="20230604 22:09:47.624"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:09:47.623" endtime="20230604 22:09:47.624"/>
+</branch>
+<status status="PASS" starttime="20230604 22:09:47.623" endtime="20230604 22:09:47.624"/>
+</if>
+<if>
+<branch type="IF" condition="${checkbox} == 1">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:47.626" level="INFO">Selecting checkbox 'name=courses.SQL'.</msg>
+<status status="PASS" starttime="20230604 22:09:47.625" endtime="20230604 22:09:50.223"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:47.624" endtime="20230604 22:09:50.223"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 2">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:50.223" endtime="20230604 22:09:50.223"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:50.223" endtime="20230604 22:09:50.223"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:09:50.223" endtime="20230604 22:09:50.223"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 3">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:50.223" endtime="20230604 22:09:50.223"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:50.223" endtime="20230604 22:09:50.223"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:50.223" endtime="20230604 22:09:50.223"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:09:50.223" endtime="20230604 22:09:50.223"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 4">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:50.223" endtime="20230604 22:09:50.223"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:50.223" endtime="20230604 22:09:50.223"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:50.223" endtime="20230604 22:09:50.223"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_2}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:09:50.223" endtime="20230604 22:09:50.223"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:09:50.223" endtime="20230604 22:09:50.223"/>
+</branch>
+<status status="PASS" starttime="20230604 22:09:47.624" endtime="20230604 22:09:50.223"/>
+</if>
+<if>
+<branch type="IF" condition="${national} == 1">
+<kw name="Select list nationality" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_nationality}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:50.224" level="INFO">Clicking element 'id=nationality'.</msg>
+<status status="PASS" starttime="20230604 22:09:50.224" endtime="20230604 22:09:51.332"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:09:51.332" endtime="20230604 22:09:52.369"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:52.371" level="INFO">Clicking element '//*[@id="menu-"]/div[3]/ul/li[221]'.</msg>
+<status status="PASS" starttime="20230604 22:09:52.369" endtime="20230604 22:09:53.478"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:50.224" endtime="20230604 22:09:53.478"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:50.224" endtime="20230604 22:09:53.479"/>
+</branch>
+<status status="PASS" starttime="20230604 22:09:50.224" endtime="20230604 22:09:53.479"/>
+</if>
+<if>
+<branch type="IF" condition="${role} == 1">
+<kw name="Select list role" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_role}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:53.481" level="INFO">Clicking element 'id=select-role'.</msg>
+<status status="PASS" starttime="20230604 22:09:53.480" endtime="20230604 22:09:54.537"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:09:54.538" endtime="20230604 22:09:55.569"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:55.571" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20230604 22:09:55.570" endtime="20230604 22:09:56.626"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:53.480" endtime="20230604 22:09:56.627"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:53.479" endtime="20230604 22:09:56.627"/>
+</branch>
+<status status="PASS" starttime="20230604 22:09:53.479" endtime="20230604 22:09:56.627"/>
+</if>
+<if>
+<branch type="IF" condition="${plan} == 1">
+<kw name="Select list plan" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:56.630" level="INFO">Clicking element 'id=select-plan'.</msg>
+<status status="PASS" starttime="20230604 22:09:56.629" endtime="20230604 22:09:57.686"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:09:57.687" endtime="20230604 22:09:58.724"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:58.726" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20230604 22:09:58.724" endtime="20230604 22:09:59.780"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:56.628" endtime="20230604 22:09:59.780"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:56.627" endtime="20230604 22:09:59.780"/>
+</branch>
+<status status="PASS" starttime="20230604 22:09:56.627" endtime="20230604 22:09:59.780"/>
+</if>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_btn_sign_up}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:09:59.782" level="INFO">Clicking element 'id=btn-sign-up'.</msg>
+<status status="PASS" starttime="20230604 22:09:59.781" endtime="20230604 22:10:00.852"/>
+</kw>
+<kw name="Verify error message - Test Temples" library="keyword">
+<arg>${locator_error_msg}</arg>
+<arg>${msg}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${txt}</var>
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:01.877" level="INFO">${txt} = This field is required</msg>
+<status status="PASS" starttime="20230604 22:10:00.852" endtime="20230604 22:10:01.877"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${txt}</arg>
+<arg>${msg}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230604 22:10:01.878" endtime="20230604 22:10:01.879"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:00.852" endtime="20230604 22:10:01.879"/>
+</kw>
+<status status="PASS" starttime="20230604 22:09:32.184" endtime="20230604 22:10:01.879"/>
+</kw>
+<kw name="Input data for fail - Test Temples" library="keyword">
+<arg>ชื่อ</arg>
+<arg>นามสกุล</arg>
+<arg>aom@gmail.com</arg>
+<arg>0123456</arg>
+<arg>0895737887</arg>
+<arg>male</arg>
+<arg>0</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>${locator_error_msg_courses}</arg>
+<arg>This field is required</arg>
+<kw name="Open WebBrowser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230604 22:10:01.881" level="INFO">Opening browser 'gc' to base url 'https://automate-test.stpb-digital.com/register/'.</msg>
+<msg timestamp="20230604 22:10:01.882" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230604 22:10:01.880" endtime="20230604 22:10:05.369"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kru P' Beam</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230604 22:10:05.370" endtime="20230604 22:10:05.891"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230604 22:10:05.892" endtime="20230604 22:10:06.803"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:01.880" endtime="20230604 22:10:06.804"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_firstname}</arg>
+<arg>${firsename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:06.806" level="INFO">Typing text 'ชื่อ' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20230604 22:10:06.804" endtime="20230604 22:10:08.493"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_lastname}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:08.495" level="INFO">Typing text 'นามสกุล' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20230604 22:10:08.493" endtime="20230604 22:10:10.084"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:10.086" level="INFO">Typing text 'aom@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230604 22:10:10.084" endtime="20230604 22:10:11.687"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:11.689" level="INFO">Typing text '0123456' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230604 22:10:11.687" endtime="20230604 22:10:13.282"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_mobile_phone}</arg>
+<arg>${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:13.285" level="INFO">Typing text '0895737887' into text field 'id=mobile-phone'.</msg>
+<status status="PASS" starttime="20230604 22:10:13.283" endtime="20230604 22:10:14.884"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${gender}&quot; != &quot;EMPTY&quot;">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${locator_gender}</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230604 22:10:14.886" level="INFO">Selecting 'male' from radio button 'validation-basic-radio'.</msg>
+<status status="PASS" starttime="20230604 22:10:14.886" endtime="20230604 22:10:16.460"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:14.885" endtime="20230604 22:10:16.460"/>
+</branch>
+<status status="PASS" starttime="20230604 22:10:14.884" endtime="20230604 22:10:16.460"/>
+</if>
+<if>
+<branch type="IF" condition="${checkbox} == 1">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:16.460" endtime="20230604 22:10:16.460"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:10:16.460" endtime="20230604 22:10:16.460"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 2">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:16.460" endtime="20230604 22:10:16.460"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:16.460" endtime="20230604 22:10:16.460"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:10:16.460" endtime="20230604 22:10:16.460"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 3">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:16.460" endtime="20230604 22:10:16.460"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:16.460" endtime="20230604 22:10:16.460"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:16.460" endtime="20230604 22:10:16.460"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:10:16.460" endtime="20230604 22:10:16.460"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 4">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:16.461" endtime="20230604 22:10:16.461"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:16.461" endtime="20230604 22:10:16.461"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:16.461" endtime="20230604 22:10:16.461"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_2}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:16.461" endtime="20230604 22:10:16.461"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:10:16.460" endtime="20230604 22:10:16.461"/>
+</branch>
+<status status="PASS" starttime="20230604 22:10:16.460" endtime="20230604 22:10:16.461"/>
+</if>
+<if>
+<branch type="IF" condition="${national} == 1">
+<kw name="Select list nationality" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_nationality}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:16.461" level="INFO">Clicking element 'id=nationality'.</msg>
+<status status="PASS" starttime="20230604 22:10:16.461" endtime="20230604 22:10:17.579"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:10:17.580" endtime="20230604 22:10:18.611"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:18.614" level="INFO">Clicking element '//*[@id="menu-"]/div[3]/ul/li[221]'.</msg>
+<status status="PASS" starttime="20230604 22:10:18.612" endtime="20230604 22:10:19.718"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:16.461" endtime="20230604 22:10:19.719"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:16.461" endtime="20230604 22:10:19.719"/>
+</branch>
+<status status="PASS" starttime="20230604 22:10:16.461" endtime="20230604 22:10:19.719"/>
+</if>
+<if>
+<branch type="IF" condition="${role} == 1">
+<kw name="Select list role" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_role}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:19.721" level="INFO">Clicking element 'id=select-role'.</msg>
+<status status="PASS" starttime="20230604 22:10:19.720" endtime="20230604 22:10:20.780"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:10:20.781" endtime="20230604 22:10:21.820"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:21.821" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20230604 22:10:21.821" endtime="20230604 22:10:22.873"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:19.720" endtime="20230604 22:10:22.873"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:19.719" endtime="20230604 22:10:22.873"/>
+</branch>
+<status status="PASS" starttime="20230604 22:10:19.719" endtime="20230604 22:10:22.873"/>
+</if>
+<if>
+<branch type="IF" condition="${plan} == 1">
+<kw name="Select list plan" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:22.874" level="INFO">Clicking element 'id=select-plan'.</msg>
+<status status="PASS" starttime="20230604 22:10:22.873" endtime="20230604 22:10:23.929"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:10:23.929" endtime="20230604 22:10:24.964"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:24.966" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20230604 22:10:24.965" endtime="20230604 22:10:26.019"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:22.873" endtime="20230604 22:10:26.019"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:22.873" endtime="20230604 22:10:26.019"/>
+</branch>
+<status status="PASS" starttime="20230604 22:10:22.873" endtime="20230604 22:10:26.019"/>
+</if>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_btn_sign_up}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:26.021" level="INFO">Clicking element 'id=btn-sign-up'.</msg>
+<status status="PASS" starttime="20230604 22:10:26.020" endtime="20230604 22:10:27.098"/>
+</kw>
+<kw name="Verify error message - Test Temples" library="keyword">
+<arg>${locator_error_msg}</arg>
+<arg>${msg}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${txt}</var>
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:28.127" level="INFO">${txt} = This field is required</msg>
+<status status="PASS" starttime="20230604 22:10:27.099" endtime="20230604 22:10:28.128"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${txt}</arg>
+<arg>${msg}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230604 22:10:28.128" endtime="20230604 22:10:28.129"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:27.098" endtime="20230604 22:10:28.129"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:01.880" endtime="20230604 22:10:28.129"/>
+</kw>
+<kw name="Input data for fail - Test Temples" library="keyword">
+<arg>ชื่อ</arg>
+<arg>นามสกุล</arg>
+<arg>aom@gmail.com</arg>
+<arg>0123456</arg>
+<arg>0895737887</arg>
+<arg>male</arg>
+<arg>1</arg>
+<arg>0</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>${locator_error_msg_nationality}</arg>
+<arg>This field is required</arg>
+<kw name="Open WebBrowser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230604 22:10:28.132" level="INFO">Opening browser 'gc' to base url 'https://automate-test.stpb-digital.com/register/'.</msg>
+<msg timestamp="20230604 22:10:28.133" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230604 22:10:28.131" endtime="20230604 22:10:33.997"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kru P' Beam</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230604 22:10:33.997" endtime="20230604 22:10:34.518"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230604 22:10:34.518" endtime="20230604 22:10:35.429"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:28.131" endtime="20230604 22:10:35.430"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_firstname}</arg>
+<arg>${firsename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:35.432" level="INFO">Typing text 'ชื่อ' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20230604 22:10:35.430" endtime="20230604 22:10:37.122"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_lastname}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:37.124" level="INFO">Typing text 'นามสกุล' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20230604 22:10:37.123" endtime="20230604 22:10:38.724"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:38.726" level="INFO">Typing text 'aom@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230604 22:10:38.724" endtime="20230604 22:10:40.307"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:40.308" level="INFO">Typing text '0123456' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230604 22:10:40.308" endtime="20230604 22:10:41.877"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_mobile_phone}</arg>
+<arg>${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:41.877" level="INFO">Typing text '0895737887' into text field 'id=mobile-phone'.</msg>
+<status status="PASS" starttime="20230604 22:10:41.877" endtime="20230604 22:10:43.470"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${gender}&quot; != &quot;EMPTY&quot;">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${locator_gender}</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230604 22:10:43.472" level="INFO">Selecting 'male' from radio button 'validation-basic-radio'.</msg>
+<status status="PASS" starttime="20230604 22:10:43.472" endtime="20230604 22:10:45.062"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:43.471" endtime="20230604 22:10:45.062"/>
+</branch>
+<status status="PASS" starttime="20230604 22:10:43.471" endtime="20230604 22:10:45.062"/>
+</if>
+<if>
+<branch type="IF" condition="${checkbox} == 1">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:45.063" level="INFO">Selecting checkbox 'name=courses.SQL'.</msg>
+<status status="PASS" starttime="20230604 22:10:45.062" endtime="20230604 22:10:47.662"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:45.062" endtime="20230604 22:10:47.662"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 2">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:47.663" endtime="20230604 22:10:47.663"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:47.663" endtime="20230604 22:10:47.663"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:10:47.662" endtime="20230604 22:10:47.663"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 3">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:47.664" endtime="20230604 22:10:47.664"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:47.664" endtime="20230604 22:10:47.664"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:47.664" endtime="20230604 22:10:47.664"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:10:47.663" endtime="20230604 22:10:47.664"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 4">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:47.664" endtime="20230604 22:10:47.665"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:47.665" endtime="20230604 22:10:47.665"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:47.665" endtime="20230604 22:10:47.665"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_2}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:10:47.665" endtime="20230604 22:10:47.665"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:10:47.664" endtime="20230604 22:10:47.665"/>
+</branch>
+<status status="PASS" starttime="20230604 22:10:45.062" endtime="20230604 22:10:47.665"/>
+</if>
+<if>
+<branch type="IF" condition="${national} == 1">
+<kw name="Select list nationality" library="keyword">
+<status status="NOT RUN" starttime="20230604 22:10:47.666" endtime="20230604 22:10:47.666"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:10:47.665" endtime="20230604 22:10:47.666"/>
+</branch>
+<status status="PASS" starttime="20230604 22:10:47.665" endtime="20230604 22:10:47.666"/>
+</if>
+<if>
+<branch type="IF" condition="${role} == 1">
+<kw name="Select list role" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_role}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:47.667" level="INFO">Clicking element 'id=select-role'.</msg>
+<status status="PASS" starttime="20230604 22:10:47.666" endtime="20230604 22:10:48.733"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:10:48.734" endtime="20230604 22:10:49.781"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:49.782" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20230604 22:10:49.781" endtime="20230604 22:10:50.826"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:47.666" endtime="20230604 22:10:50.827"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:47.666" endtime="20230604 22:10:50.827"/>
+</branch>
+<status status="PASS" starttime="20230604 22:10:47.666" endtime="20230604 22:10:50.827"/>
+</if>
+<if>
+<branch type="IF" condition="${plan} == 1">
+<kw name="Select list plan" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:50.827" level="INFO">Clicking element 'id=select-plan'.</msg>
+<status status="PASS" starttime="20230604 22:10:50.827" endtime="20230604 22:10:51.877"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:10:51.877" endtime="20230604 22:10:52.917"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:52.919" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20230604 22:10:52.917" endtime="20230604 22:10:53.977"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:50.827" endtime="20230604 22:10:53.977"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:50.827" endtime="20230604 22:10:53.977"/>
+</branch>
+<status status="PASS" starttime="20230604 22:10:50.827" endtime="20230604 22:10:53.978"/>
+</if>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_btn_sign_up}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:53.979" level="INFO">Clicking element 'id=btn-sign-up'.</msg>
+<status status="PASS" starttime="20230604 22:10:53.978" endtime="20230604 22:10:55.050"/>
+</kw>
+<kw name="Verify error message - Test Temples" library="keyword">
+<arg>${locator_error_msg}</arg>
+<arg>${msg}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${txt}</var>
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:10:56.083" level="INFO">${txt} = This field is required</msg>
+<status status="PASS" starttime="20230604 22:10:55.051" endtime="20230604 22:10:56.083"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${txt}</arg>
+<arg>${msg}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230604 22:10:56.084" endtime="20230604 22:10:56.085"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:55.051" endtime="20230604 22:10:56.085"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:28.130" endtime="20230604 22:10:56.085"/>
+</kw>
+<kw name="Input data for fail - Test Temples" library="keyword">
+<arg>ชื่อ</arg>
+<arg>นามสกุล</arg>
+<arg>aom@gmail.com</arg>
+<arg>0123456</arg>
+<arg>0895737887</arg>
+<arg>male</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>0</arg>
+<arg>1</arg>
+<arg>${locator_error_msg_role}</arg>
+<arg>This field is required</arg>
+<kw name="Open WebBrowser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230604 22:10:56.087" level="INFO">Opening browser 'gc' to base url 'https://automate-test.stpb-digital.com/register/'.</msg>
+<msg timestamp="20230604 22:10:56.088" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230604 22:10:56.086" endtime="20230604 22:11:04.124"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kru P' Beam</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230604 22:11:04.125" endtime="20230604 22:11:04.647"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230604 22:11:04.647" endtime="20230604 22:11:05.560"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:56.086" endtime="20230604 22:11:05.560"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_firstname}</arg>
+<arg>${firsename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:05.562" level="INFO">Typing text 'ชื่อ' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20230604 22:11:05.561" endtime="20230604 22:11:07.248"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_lastname}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:07.250" level="INFO">Typing text 'นามสกุล' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20230604 22:11:07.249" endtime="20230604 22:11:08.853"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:08.854" level="INFO">Typing text 'aom@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230604 22:11:08.853" endtime="20230604 22:11:10.456"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:10.458" level="INFO">Typing text '0123456' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230604 22:11:10.456" endtime="20230604 22:11:12.053"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_mobile_phone}</arg>
+<arg>${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:12.055" level="INFO">Typing text '0895737887' into text field 'id=mobile-phone'.</msg>
+<status status="PASS" starttime="20230604 22:11:12.054" endtime="20230604 22:11:13.656"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${gender}&quot; != &quot;EMPTY&quot;">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${locator_gender}</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230604 22:11:13.657" level="INFO">Selecting 'male' from radio button 'validation-basic-radio'.</msg>
+<status status="PASS" starttime="20230604 22:11:13.657" endtime="20230604 22:11:15.237"/>
+</kw>
+<status status="PASS" starttime="20230604 22:11:13.656" endtime="20230604 22:11:15.238"/>
+</branch>
+<status status="PASS" starttime="20230604 22:11:13.656" endtime="20230604 22:11:15.238"/>
+</if>
+<if>
+<branch type="IF" condition="${checkbox} == 1">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:15.238" level="INFO">Selecting checkbox 'name=courses.SQL'.</msg>
+<status status="PASS" starttime="20230604 22:11:15.238" endtime="20230604 22:11:17.842"/>
+</kw>
+<status status="PASS" starttime="20230604 22:11:15.238" endtime="20230604 22:11:17.842"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 2">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:17.843" endtime="20230604 22:11:17.843"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:17.843" endtime="20230604 22:11:17.843"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:11:17.842" endtime="20230604 22:11:17.843"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 3">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:17.843" endtime="20230604 22:11:17.843"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:17.844" endtime="20230604 22:11:17.844"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:17.844" endtime="20230604 22:11:17.844"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:11:17.843" endtime="20230604 22:11:17.844"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 4">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:17.844" endtime="20230604 22:11:17.844"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:17.844" endtime="20230604 22:11:17.844"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:17.844" endtime="20230604 22:11:17.844"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_2}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:17.844" endtime="20230604 22:11:17.845"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:11:17.844" endtime="20230604 22:11:17.845"/>
+</branch>
+<status status="PASS" starttime="20230604 22:11:15.238" endtime="20230604 22:11:17.845"/>
+</if>
+<if>
+<branch type="IF" condition="${national} == 1">
+<kw name="Select list nationality" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_nationality}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:17.847" level="INFO">Clicking element 'id=nationality'.</msg>
+<status status="PASS" starttime="20230604 22:11:17.846" endtime="20230604 22:11:18.965"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:11:18.967" endtime="20230604 22:11:19.995"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:19.997" level="INFO">Clicking element '//*[@id="menu-"]/div[3]/ul/li[221]'.</msg>
+<status status="PASS" starttime="20230604 22:11:19.995" endtime="20230604 22:11:21.104"/>
+</kw>
+<status status="PASS" starttime="20230604 22:11:17.845" endtime="20230604 22:11:21.105"/>
+</kw>
+<status status="PASS" starttime="20230604 22:11:17.845" endtime="20230604 22:11:21.105"/>
+</branch>
+<status status="PASS" starttime="20230604 22:11:17.845" endtime="20230604 22:11:21.105"/>
+</if>
+<if>
+<branch type="IF" condition="${role} == 1">
+<kw name="Select list role" library="keyword">
+<status status="NOT RUN" starttime="20230604 22:11:21.106" endtime="20230604 22:11:21.106"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:11:21.105" endtime="20230604 22:11:21.106"/>
+</branch>
+<status status="PASS" starttime="20230604 22:11:21.105" endtime="20230604 22:11:21.106"/>
+</if>
+<if>
+<branch type="IF" condition="${plan} == 1">
+<kw name="Select list plan" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:21.107" level="INFO">Clicking element 'id=select-plan'.</msg>
+<status status="PASS" starttime="20230604 22:11:21.106" endtime="20230604 22:11:22.168"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:11:22.169" endtime="20230604 22:11:23.210"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_plan_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:23.211" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20230604 22:11:23.210" endtime="20230604 22:11:24.260"/>
+</kw>
+<status status="PASS" starttime="20230604 22:11:21.106" endtime="20230604 22:11:24.261"/>
+</kw>
+<status status="PASS" starttime="20230604 22:11:21.106" endtime="20230604 22:11:24.261"/>
+</branch>
+<status status="PASS" starttime="20230604 22:11:21.106" endtime="20230604 22:11:24.261"/>
+</if>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_btn_sign_up}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:24.263" level="INFO">Clicking element 'id=btn-sign-up'.</msg>
+<status status="PASS" starttime="20230604 22:11:24.261" endtime="20230604 22:11:25.338"/>
+</kw>
+<kw name="Verify error message - Test Temples" library="keyword">
+<arg>${locator_error_msg}</arg>
+<arg>${msg}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${txt}</var>
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:26.371" level="INFO">${txt} = This field is required</msg>
+<status status="PASS" starttime="20230604 22:11:25.338" endtime="20230604 22:11:26.371"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${txt}</arg>
+<arg>${msg}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230604 22:11:26.371" endtime="20230604 22:11:26.372"/>
+</kw>
+<status status="PASS" starttime="20230604 22:11:25.338" endtime="20230604 22:11:26.373"/>
+</kw>
+<status status="PASS" starttime="20230604 22:10:56.086" endtime="20230604 22:11:26.373"/>
+</kw>
+<kw name="Input data for fail - Test Temples" library="keyword">
+<arg>ชื่อ</arg>
+<arg>นามสกุล</arg>
+<arg>aom@gmail.com</arg>
+<arg>0123456</arg>
+<arg>0895737887</arg>
+<arg>male</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>1</arg>
+<arg>0</arg>
+<arg>${locator_error_msg_plan}</arg>
+<arg>This field is required</arg>
+<kw name="Open WebBrowser" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230604 22:11:26.375" level="INFO">Opening browser 'gc' to base url 'https://automate-test.stpb-digital.com/register/'.</msg>
+<msg timestamp="20230604 22:11:26.376" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230604 22:11:26.374" endtime="20230604 22:11:30.185"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Kru P' Beam</arg>
+<arg>5s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230604 22:11:30.185" endtime="20230604 22:11:30.703"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230604 22:11:30.704" endtime="20230604 22:11:31.618"/>
+</kw>
+<status status="PASS" starttime="20230604 22:11:26.374" endtime="20230604 22:11:31.619"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_firstname}</arg>
+<arg>${firsename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:31.621" level="INFO">Typing text 'ชื่อ' into text field 'id=firstname'.</msg>
+<status status="PASS" starttime="20230604 22:11:31.620" endtime="20230604 22:11:33.306"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_lastname}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:33.308" level="INFO">Typing text 'นามสกุล' into text field 'id=lastname'.</msg>
+<status status="PASS" starttime="20230604 22:11:33.306" endtime="20230604 22:11:34.901"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_email}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:34.903" level="INFO">Typing text 'aom@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20230604 22:11:34.901" endtime="20230604 22:11:36.513"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:36.515" level="INFO">Typing text '0123456' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20230604 22:11:36.514" endtime="20230604 22:11:38.073"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_mobile_phone}</arg>
+<arg>${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:38.076" level="INFO">Typing text '0895737887' into text field 'id=mobile-phone'.</msg>
+<status status="PASS" starttime="20230604 22:11:38.074" endtime="20230604 22:11:39.672"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${gender}&quot; != &quot;EMPTY&quot;">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${locator_gender}</arg>
+<arg>${gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230604 22:11:39.674" level="INFO">Selecting 'male' from radio button 'validation-basic-radio'.</msg>
+<status status="PASS" starttime="20230604 22:11:39.674" endtime="20230604 22:11:41.258"/>
+</kw>
+<status status="PASS" starttime="20230604 22:11:39.673" endtime="20230604 22:11:41.258"/>
+</branch>
+<status status="PASS" starttime="20230604 22:11:39.673" endtime="20230604 22:11:41.258"/>
+</if>
+<if>
+<branch type="IF" condition="${checkbox} == 1">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:41.259" level="INFO">Selecting checkbox 'name=courses.SQL'.</msg>
+<status status="PASS" starttime="20230604 22:11:41.259" endtime="20230604 22:11:43.854"/>
+</kw>
+<status status="PASS" starttime="20230604 22:11:41.258" endtime="20230604 22:11:43.854"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 2">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:43.854" endtime="20230604 22:11:43.854"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:43.854" endtime="20230604 22:11:43.854"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:11:43.854" endtime="20230604 22:11:43.854"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 3">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:43.855" endtime="20230604 22:11:43.855"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:43.855" endtime="20230604 22:11:43.855"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:43.855" endtime="20230604 22:11:43.855"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:11:43.854" endtime="20230604 22:11:43.855"/>
+</branch>
+<branch type="ELSE IF" condition="${checkbox} == 4">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_sql}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:43.855" endtime="20230604 22:11:43.855"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_manual}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:43.855" endtime="20230604 22:11:43.855"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_1}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:43.855" endtime="20230604 22:11:43.855"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>${locator_checkbox_auto_2}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230604 22:11:43.855" endtime="20230604 22:11:43.855"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:11:43.855" endtime="20230604 22:11:43.855"/>
+</branch>
+<status status="PASS" starttime="20230604 22:11:41.258" endtime="20230604 22:11:43.855"/>
+</if>
+<if>
+<branch type="IF" condition="${national} == 1">
+<kw name="Select list nationality" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_nationality}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:43.858" level="INFO">Clicking element 'id=nationality'.</msg>
+<status status="PASS" starttime="20230604 22:11:43.857" endtime="20230604 22:11:44.977"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:11:44.977" endtime="20230604 22:11:46.012"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_nationality_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:46.014" level="INFO">Clicking element '//*[@id="menu-"]/div[3]/ul/li[221]'.</msg>
+<status status="PASS" starttime="20230604 22:11:46.013" endtime="20230604 22:11:47.119"/>
+</kw>
+<status status="PASS" starttime="20230604 22:11:43.856" endtime="20230604 22:11:47.120"/>
+</kw>
+<status status="PASS" starttime="20230604 22:11:43.856" endtime="20230604 22:11:47.120"/>
+</branch>
+<status status="PASS" starttime="20230604 22:11:43.856" endtime="20230604 22:11:47.120"/>
+</if>
+<if>
+<branch type="IF" condition="${role} == 1">
+<kw name="Select list role" library="keyword">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locatoe_select_role}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:47.123" level="INFO">Clicking element 'id=select-role'.</msg>
+<status status="PASS" starttime="20230604 22:11:47.121" endtime="20230604 22:11:48.181"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<arg>5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230604 22:11:48.181" endtime="20230604 22:11:49.212"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_select_role_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:49.213" level="INFO">Clicking element 'xpath=//*[@id="menu-"]/div[3]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20230604 22:11:49.212" endtime="20230604 22:11:50.265"/>
+</kw>
+<status status="PASS" starttime="20230604 22:11:47.121" endtime="20230604 22:11:50.266"/>
+</kw>
+<status status="PASS" starttime="20230604 22:11:47.120" endtime="20230604 22:11:50.266"/>
+</branch>
+<status status="PASS" starttime="20230604 22:11:47.120" endtime="20230604 22:11:50.266"/>
+</if>
+<if>
+<branch type="IF" condition="${plan} == 1">
+<kw name="Select list plan" library="keyword">
+<status status="NOT RUN" starttime="20230604 22:11:50.267" endtime="20230604 22:11:50.267"/>
+</kw>
+<status status="NOT RUN" starttime="20230604 22:11:50.266" endtime="20230604 22:11:50.267"/>
+</branch>
+<status status="PASS" starttime="20230604 22:11:50.266" endtime="20230604 22:11:50.267"/>
+</if>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_btn_sign_up}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:50.269" level="INFO">Clicking element 'id=btn-sign-up'.</msg>
+<status status="PASS" starttime="20230604 22:11:50.267" endtime="20230604 22:11:51.341"/>
+</kw>
+<kw name="Verify error message - Test Temples" library="keyword">
+<arg>${locator_error_msg}</arg>
+<arg>${msg}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${txt}</var>
+<arg>${locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230604 22:11:52.375" level="INFO">${txt} = This field is required</msg>
+<status status="PASS" starttime="20230604 22:11:51.341" endtime="20230604 22:11:52.375"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${txt}</arg>
+<arg>${msg}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230604 22:11:52.375" endtime="20230604 22:11:52.376"/>
+</kw>
+<status status="PASS" starttime="20230604 22:11:51.341" endtime="20230604 22:11:52.377"/>
+</kw>
+<status status="PASS" starttime="20230604 22:11:26.373" endtime="20230604 22:11:52.377"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230604 22:11:52.378" endtime="20230604 22:11:52.942"/>
+</kw>
+<doc>ใช้สำหรับทดสอบในกรณีกรอกข้อมูลไม่ครบถ้วน</doc>
+<tag>Fail</tag>
+<status status="PASS" starttime="20230604 22:07:00.125" endtime="20230604 22:11:52.942"/>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230604 22:11:52.943" endtime="20230604 22:11:58.626"/>
+</kw>
+<status status="PASS" starttime="20230604 22:05:13.374" endtime="20230604 22:11:58.626"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Fail</stat>
+<stat pass="1" fail="0" skip="0">Test Fail</stat>
+<stat pass="2" fail="0" skip="0">Test Pass</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Workshop3">Workshop3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

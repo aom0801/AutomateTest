@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on darwin)" generated="20230607 17:41:51.628" rpa="false" schemaversion="3">
+<suite id="s1" name="Calculator" source="/Users/livinginsider/Automate/googleCalculator/calculator.robot">
+<test id="s1-t1" name="TC-open web" line="106">
+<kw name="Open Google" type="SETUP">
+<tag>open browser</tag>
+<doc>ทำการเปิด web Google</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230607 17:41:51.707" level="INFO">Opening browser 'gc' to base url 'https://www.google.com/'.</msg>
+<msg timestamp="20230607 17:41:51.709" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230607 17:41:51.707" endtime="20230607 17:41:56.473"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230607 17:41:56.474" endtime="20230607 17:41:56.583"/>
+</kw>
+<status status="PASS" starttime="20230607 17:41:51.707" endtime="20230607 17:41:56.583"/>
+</kw>
+<kw name="Input Keyword for search">
+<tag>search</tag>
+<doc>ใช้สำหรับกรอก keyword ที่ต้องการ</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230607 17:41:56.584" endtime="20230607 17:41:56.609"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>calculator</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230607 17:41:56.609" level="INFO">Typing text 'calculator' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20230607 17:41:56.609" endtime="20230607 17:41:56.707"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230607 17:41:56.707" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg timestamp="20230607 17:41:56.994" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230607 17:41:56.994" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230607 17:41:56.707" endtime="20230607 17:41:58.660"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>calculator</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230607 17:41:58.660" endtime="20230607 17:41:58.689"/>
+</kw>
+<status status="PASS" starttime="20230607 17:41:56.583" endtime="20230607 17:41:58.689"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230607 17:41:58.689" endtime="20230607 17:41:58.762"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230607 17:41:58.762" endtime="20230607 17:41:58.762"/>
+</kw>
+<doc>ทดสอบการเปิด web</doc>
+<status status="PASS" starttime="20230607 17:41:51.706" endtime="20230607 17:41:58.762"/>
+</test>
+<test id="s1-t2" name="TC-plus" line="111">
+<kw name="Open Google" type="SETUP">
+<tag>open browser</tag>
+<doc>ทำการเปิด web Google</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230607 17:41:58.763" level="INFO">Opening browser 'gc' to base url 'https://www.google.com/'.</msg>
+<msg timestamp="20230607 17:41:58.764" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230607 17:41:58.763" endtime="20230607 17:42:01.447"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230607 17:42:01.447" endtime="20230607 17:42:01.553"/>
+</kw>
+<status status="PASS" starttime="20230607 17:41:58.763" endtime="20230607 17:42:01.553"/>
+</kw>
+<kw name="Input Keyword for search">
+<tag>search</tag>
+<doc>ใช้สำหรับกรอก keyword ที่ต้องการ</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230607 17:42:01.554" endtime="20230607 17:42:01.571"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>calculator</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:01.571" level="INFO">Typing text 'calculator' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20230607 17:42:01.571" endtime="20230607 17:42:01.663"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230607 17:42:01.663" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg timestamp="20230607 17:42:01.946" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230607 17:42:01.946" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230607 17:42:01.663" endtime="20230607 17:42:03.846"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>calculator</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230607 17:42:03.847" endtime="20230607 17:42:03.869"/>
+</kw>
+<status status="PASS" starttime="20230607 17:42:01.553" endtime="20230607 17:42:03.870"/>
+</kw>
+<kw name="Verify Check result calculator - plus">
+<tag>+</tag>
+<doc>ใช้สำหรับการบวก</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:03.870" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/tr[3]/td[1]/div/div'.</msg>
+<status status="PASS" starttime="20230607 17:42:03.870" endtime="20230607 17:42:03.900"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_plus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:03.900" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/tr[5]/td[4]/div/div'.</msg>
+<status status="PASS" starttime="20230607 17:42:03.900" endtime="20230607 17:42:03.918"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:03.919" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/tr[4]/td[2]/div/div'.</msg>
+<status status="PASS" starttime="20230607 17:42:03.918" endtime="20230607 17:42:03.936"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_ans}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:03.936" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/tr[5]/td[3]/div/div'.</msg>
+<status status="PASS" starttime="20230607 17:42:03.936" endtime="20230607 17:42:03.957"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ans}</var>
+<arg>${locator_result}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:03.968" level="INFO">${ans} = 6</msg>
+<status status="PASS" starttime="20230607 17:42:03.957" endtime="20230607 17:42:03.968"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>6</arg>
+<arg>${ans}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20230607 17:42:03.968" endtime="20230607 17:42:03.968"/>
+</kw>
+<status status="PASS" starttime="20230607 17:42:03.870" endtime="20230607 17:42:03.968"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230607 17:42:03.968" endtime="20230607 17:42:04.034"/>
+</kw>
+<doc>ทดสอบการบวก</doc>
+<status status="PASS" starttime="20230607 17:41:58.763" endtime="20230607 17:42:04.034"/>
+</test>
+<test id="s1-t3" name="TC-minus" line="116">
+<kw name="Open Google" type="SETUP">
+<tag>open browser</tag>
+<doc>ทำการเปิด web Google</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230607 17:42:04.035" level="INFO">Opening browser 'gc' to base url 'https://www.google.com/'.</msg>
+<msg timestamp="20230607 17:42:04.035" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230607 17:42:04.035" endtime="20230607 17:42:07.758"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230607 17:42:07.758" endtime="20230607 17:42:08.175"/>
+</kw>
+<status status="PASS" starttime="20230607 17:42:04.034" endtime="20230607 17:42:08.175"/>
+</kw>
+<kw name="Input Keyword for search">
+<tag>search</tag>
+<doc>ใช้สำหรับกรอก keyword ที่ต้องการ</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230607 17:42:08.176" endtime="20230607 17:42:08.191"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>calculator</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:08.191" level="INFO">Typing text 'calculator' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20230607 17:42:08.191" endtime="20230607 17:42:08.289"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230607 17:42:08.289" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg timestamp="20230607 17:42:08.563" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230607 17:42:08.563" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230607 17:42:08.289" endtime="20230607 17:42:11.339"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>calculator</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230607 17:42:11.339" endtime="20230607 17:42:11.358"/>
+</kw>
+<status status="PASS" starttime="20230607 17:42:08.175" endtime="20230607 17:42:11.358"/>
+</kw>
+<kw name="Verify Check result calculator - minus">
+<tag>-</tag>
+<doc>ใช้สำหรับการลบ</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:11.359" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/tr[3]/td[1]/div/div'.</msg>
+<status status="PASS" starttime="20230607 17:42:11.359" endtime="20230607 17:42:11.388"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_minus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:11.389" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/tr[4]/td[4]/div/div'.</msg>
+<status status="PASS" starttime="20230607 17:42:11.388" endtime="20230607 17:42:11.415"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:11.416" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/tr[4]/td[2]/div/div'.</msg>
+<status status="PASS" starttime="20230607 17:42:11.416" endtime="20230607 17:42:11.434"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_ans}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:11.434" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/tr[5]/td[3]/div/div'.</msg>
+<status status="PASS" starttime="20230607 17:42:11.434" endtime="20230607 17:42:11.452"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ans}</var>
+<arg>${locator_result}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:11.462" level="INFO">${ans} = 2</msg>
+<status status="PASS" starttime="20230607 17:42:11.452" endtime="20230607 17:42:11.462"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>2</arg>
+<arg>${ans}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20230607 17:42:11.462" endtime="20230607 17:42:11.462"/>
+</kw>
+<status status="PASS" starttime="20230607 17:42:11.359" endtime="20230607 17:42:11.462"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230607 17:42:11.462" endtime="20230607 17:42:11.530"/>
+</kw>
+<doc>ทดสอบการลบ</doc>
+<status status="PASS" starttime="20230607 17:42:04.034" endtime="20230607 17:42:11.530"/>
+</test>
+<test id="s1-t4" name="TC-multiply" line="121">
+<kw name="Open Google" type="SETUP">
+<tag>open browser</tag>
+<doc>ทำการเปิด web Google</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230607 17:42:11.531" level="INFO">Opening browser 'gc' to base url 'https://www.google.com/'.</msg>
+<msg timestamp="20230607 17:42:11.531" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230607 17:42:11.530" endtime="20230607 17:42:15.530"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230607 17:42:15.531" endtime="20230607 17:42:15.686"/>
+</kw>
+<status status="PASS" starttime="20230607 17:42:11.530" endtime="20230607 17:42:15.686"/>
+</kw>
+<kw name="Input Keyword for search">
+<tag>search</tag>
+<doc>ใช้สำหรับกรอก keyword ที่ต้องการ</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230607 17:42:15.686" endtime="20230607 17:42:15.706"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>calculator</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:15.706" level="INFO">Typing text 'calculator' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20230607 17:42:15.706" endtime="20230607 17:42:15.808"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230607 17:42:15.809" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg timestamp="20230607 17:42:21.099" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230607 17:42:21.100" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230607 17:42:15.808" endtime="20230607 17:42:24.529"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>calculator</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230607 17:42:24.529" endtime="20230607 17:42:24.555"/>
+</kw>
+<status status="PASS" starttime="20230607 17:42:15.686" endtime="20230607 17:42:24.555"/>
+</kw>
+<kw name="Verify Check result calculator - multiply">
+<tag>*</tag>
+<doc>ใช้สำหรับการคูณ</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:24.556" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/tr[3]/td[1]/div/div'.</msg>
+<status status="PASS" starttime="20230607 17:42:24.556" endtime="20230607 17:42:24.588"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_multiply}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:24.589" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/tr[3]/td[4]/div/div'.</msg>
+<status status="PASS" starttime="20230607 17:42:24.588" endtime="20230607 17:42:24.607"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:24.607" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/tr[4]/td[2]/div/div'.</msg>
+<status status="PASS" starttime="20230607 17:42:24.607" endtime="20230607 17:42:24.624"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_ans}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:24.624" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/tr[5]/td[3]/div/div'.</msg>
+<status status="PASS" starttime="20230607 17:42:24.624" endtime="20230607 17:42:24.642"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ans}</var>
+<arg>${locator_result}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:24.652" level="INFO">${ans} = 8</msg>
+<status status="PASS" starttime="20230607 17:42:24.643" endtime="20230607 17:42:24.652"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>8</arg>
+<arg>${ans}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20230607 17:42:24.652" endtime="20230607 17:42:24.652"/>
+</kw>
+<status status="PASS" starttime="20230607 17:42:24.555" endtime="20230607 17:42:24.652"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230607 17:42:24.653" endtime="20230607 17:42:24.723"/>
+</kw>
+<doc>ทดสอบการคูณ</doc>
+<status status="PASS" starttime="20230607 17:42:11.530" endtime="20230607 17:42:24.723"/>
+</test>
+<test id="s1-t5" name="TC-divide" line="126">
+<kw name="Open Google" type="SETUP">
+<tag>open browser</tag>
+<doc>ทำการเปิด web Google</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230607 17:42:24.723" level="INFO">Opening browser 'gc' to base url 'https://www.google.com/'.</msg>
+<msg timestamp="20230607 17:42:24.724" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230607 17:42:24.723" endtime="20230607 17:42:27.649"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230607 17:42:27.650" endtime="20230607 17:42:27.756"/>
+</kw>
+<status status="PASS" starttime="20230607 17:42:24.723" endtime="20230607 17:42:27.756"/>
+</kw>
+<kw name="Input Keyword for search">
+<tag>search</tag>
+<doc>ใช้สำหรับกรอก keyword ที่ต้องการ</doc>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230607 17:42:27.756" endtime="20230607 17:42:27.773"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>calculator</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:27.773" level="INFO">Typing text 'calculator' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20230607 17:42:27.773" endtime="20230607 17:42:27.868"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230607 17:42:27.868" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg timestamp="20230607 17:42:28.141" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230607 17:42:28.141" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230607 17:42:27.868" endtime="20230607 17:42:28.410"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>calculator</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230607 17:42:28.410" endtime="20230607 17:42:30.237"/>
+</kw>
+<status status="PASS" starttime="20230607 17:42:27.756" endtime="20230607 17:42:30.238"/>
+</kw>
+<kw name="Verify Check result calculator - divide">
+<tag>/</tag>
+<doc>ใช้สำหรับการหาร</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:30.238" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/tr[3]/td[1]/div/div'.</msg>
+<status status="PASS" starttime="20230607 17:42:30.238" endtime="20230607 17:42:30.270"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_divide}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:30.270" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/tr[2]/td[4]/div/div'.</msg>
+<status status="PASS" starttime="20230607 17:42:30.270" endtime="20230607 17:42:30.293"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:30.293" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/tr[4]/td[2]/div/div'.</msg>
+<status status="PASS" starttime="20230607 17:42:30.293" endtime="20230607 17:42:30.317"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_ans}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:30.318" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div[1]/div/div/div[3]/div/table[2]/tbody/tr[5]/td[3]/div/div'.</msg>
+<status status="PASS" starttime="20230607 17:42:30.317" endtime="20230607 17:42:30.343"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${ans}</var>
+<arg>${locator_result}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230607 17:42:30.353" level="INFO">${ans} = 2</msg>
+<status status="PASS" starttime="20230607 17:42:30.343" endtime="20230607 17:42:30.353"/>
+</kw>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>2</arg>
+<arg>${ans}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20230607 17:42:30.353" endtime="20230607 17:42:30.354"/>
+</kw>
+<status status="PASS" starttime="20230607 17:42:30.238" endtime="20230607 17:42:30.354"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230607 17:42:30.354" endtime="20230607 17:42:30.426"/>
+</kw>
+<doc>ทดสอบการหาร</doc>
+<status status="PASS" starttime="20230607 17:42:24.723" endtime="20230607 17:42:30.426"/>
+</test>
+<status status="PASS" starttime="20230607 17:41:51.628" endtime="20230607 17:42:30.426"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Calculator">Calculator</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230607 17:41:51.626" level="WARN">Error in file '/Users/livinginsider/Automate/googleCalculator/calculator.robot' on line 59: Settings tags starting with a hyphen using the '[Tags]' setting is deprecated. In Robot Framework 6.1 this syntax will be used for removing tags. Escape '-' like '\-' to use the literal value and to avoid this warning.</msg>
+</errors>
+</robot>

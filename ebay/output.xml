@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on darwin)" generated="20230608 14:05:19.827" rpa="false" schemaversion="3">
+<suite id="s1" name="Ebay" source="/Users/livinginsider/Automate/ebay/ebay.robot">
+<kw name="Set Selenium Speed" library="SeleniumLibrary" type="SETUP">
+<arg>0.5s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230608 14:05:19.882" endtime="20230608 14:05:19.882"/>
+</kw>
+<test id="s1-t1" name="Verify Result Data to Keyword" line="49">
+<kw name="Verify input search data - enter key Tempale" library="keyword">
+<arg>iphone</arg>
+<kw name="open ebay web" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230608 14:05:19.883" level="INFO">Opening browser 'gc' to base url 'https://www.ebay.com/'.</msg>
+<msg timestamp="20230608 14:05:19.883" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230608 14:05:19.883" endtime="20230608 14:05:24.116"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230608 14:05:24.117" endtime="20230608 14:05:25.168"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230608 14:05:25.168" endtime="20230608 14:05:28.288"/>
+</kw>
+<status status="PASS" starttime="20230608 14:05:19.883" endtime="20230608 14:05:28.288"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230608 14:05:28.288" endtime="20230608 14:05:29.561"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>${txt}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230608 14:05:29.563" level="INFO">Typing text 'iphone' into text field 'id=gh-ac'.</msg>
+<status status="PASS" starttime="20230608 14:05:29.562" endtime="20230608 14:05:31.245"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230608 14:05:31.248" level="INFO">Sending key(s) ('ENTER',) to id=gh-ac element.</msg>
+<msg timestamp="20230608 14:05:32.568" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230608 14:05:32.569" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230608 14:05:31.245" endtime="20230608 14:05:35.923"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230608 14:05:35.923" endtime="20230608 14:05:36.503"/>
+</kw>
+<status status="PASS" starttime="20230608 14:05:19.883" endtime="20230608 14:05:36.503"/>
+</kw>
+<kw name="Verify input search data - enter key Tempale" library="keyword">
+<arg>huawai</arg>
+<kw name="open ebay web" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230608 14:05:36.506" level="INFO">Opening browser 'gc' to base url 'https://www.ebay.com/'.</msg>
+<msg timestamp="20230608 14:05:36.508" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230608 14:05:36.505" endtime="20230608 14:05:40.108"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230608 14:05:40.108" endtime="20230608 14:05:41.136"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230608 14:05:41.136" endtime="20230608 14:05:44.135"/>
+</kw>
+<status status="PASS" starttime="20230608 14:05:36.504" endtime="20230608 14:05:44.135"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230608 14:05:44.135" endtime="20230608 14:05:45.416"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>${txt}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230608 14:05:45.418" level="INFO">Typing text 'huawai' into text field 'id=gh-ac'.</msg>
+<status status="PASS" starttime="20230608 14:05:45.417" endtime="20230608 14:05:47.098"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230608 14:05:47.101" level="INFO">Sending key(s) ('ENTER',) to id=gh-ac element.</msg>
+<msg timestamp="20230608 14:05:48.415" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230608 14:05:48.415" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230608 14:05:47.099" endtime="20230608 14:05:51.057"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230608 14:05:51.057" endtime="20230608 14:05:51.620"/>
+</kw>
+<status status="PASS" starttime="20230608 14:05:36.504" endtime="20230608 14:05:51.620"/>
+</kw>
+<kw name="Verify input search data - enter key Tempale" library="keyword">
+<arg>sumsung</arg>
+<kw name="open ebay web" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230608 14:05:51.623" level="INFO">Opening browser 'gc' to base url 'https://www.ebay.com/'.</msg>
+<msg timestamp="20230608 14:05:51.624" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230608 14:05:51.622" endtime="20230608 14:05:55.612"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230608 14:05:55.612" endtime="20230608 14:05:56.703"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230608 14:05:56.703" endtime="20230608 14:05:59.703"/>
+</kw>
+<status status="PASS" starttime="20230608 14:05:51.621" endtime="20230608 14:05:59.704"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230608 14:05:59.704" endtime="20230608 14:06:00.738"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>${txt}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230608 14:06:00.740" level="INFO">Typing text 'sumsung' into text field 'id=gh-ac'.</msg>
+<status status="PASS" starttime="20230608 14:06:00.738" endtime="20230608 14:06:02.602"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230608 14:06:02.604" level="INFO">Sending key(s) ('ENTER',) to id=gh-ac element.</msg>
+<msg timestamp="20230608 14:06:03.917" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230608 14:06:03.918" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230608 14:06:02.602" endtime="20230608 14:06:07.921"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230608 14:06:07.921" endtime="20230608 14:06:08.488"/>
+</kw>
+<status status="PASS" starttime="20230608 14:05:51.621" endtime="20230608 14:06:08.488"/>
+</kw>
+<kw name="Verify input search data - enter key Tempale" library="keyword">
+<arg>oppo</arg>
+<kw name="open ebay web" library="keyword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230608 14:06:08.492" level="INFO">Opening browser 'gc' to base url 'https://www.ebay.com/'.</msg>
+<msg timestamp="20230608 14:06:08.493" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230608 14:06:08.490" endtime="20230608 14:06:13.784"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230608 14:06:13.785" endtime="20230608 14:06:14.921"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230608 14:06:14.922" endtime="20230608 14:06:15.961"/>
+</kw>
+<status status="PASS" starttime="20230608 14:06:08.490" endtime="20230608 14:06:15.962"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230608 14:06:15.962" endtime="20230608 14:06:18.779"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>${txt}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230608 14:06:18.782" level="INFO">Typing text 'oppo' into text field 'id=gh-ac'.</msg>
+<status status="PASS" starttime="20230608 14:06:18.780" endtime="20230608 14:06:20.422"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${locator_search}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230608 14:06:20.424" level="INFO">Sending key(s) ('ENTER',) to id=gh-ac element.</msg>
+<msg timestamp="20230608 14:06:21.732" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230608 14:06:21.732" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230608 14:06:20.423" endtime="20230608 14:06:24.656"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230608 14:06:24.656" endtime="20230608 14:06:25.225"/>
+</kw>
+<status status="PASS" starttime="20230608 14:06:08.489" endtime="20230608 14:06:25.225"/>
+</kw>
+<doc>ตรวจสอบการกรอกข้อมูล</doc>
+<tag>tmp</tag>
+<status status="PASS" starttime="20230608 14:05:19.882" endtime="20230608 14:06:25.226"/>
+</test>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230608 14:06:25.228" endtime="20230608 14:06:25.229"/>
+</kw>
+<status status="PASS" starttime="20230608 14:05:19.828" endtime="20230608 14:06:25.229"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">tmp</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ebay">Ebay</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
